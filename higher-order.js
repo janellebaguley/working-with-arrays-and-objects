@@ -55,7 +55,6 @@ let postTaxPrices = prices.map(function(element, index, arr){
 }, 0)
 
 
-
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.

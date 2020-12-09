@@ -39,12 +39,8 @@ let colorsCopy = [...colors]
 
 let numbers = [4, 6, 10];
 
-// function addNums(num1, num2, num3) {
-//   return num1 + num2 + num3;
-// }
-
 let addNums = [...numbers]
-
+// result = addNums()
 
 ////////// PROBLEM 4 //////////
 
@@ -53,5 +49,4 @@ let addNums = [...numbers]
 let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
-// code here
 let combinedArrays = [...arr1, ...arr2]

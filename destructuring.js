@@ -34,6 +34,7 @@ const {color, make, model, year} = carDetails;
 */
 
 function greeting( obj ) {
+  const {firstName, lastName, title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -58,7 +59,7 @@ function totalPopulation(properties){
 //   texas: 15,
 //   arizona: 20}
   const{utah, california, texas, arizona} = properties
-  return 'utah' + 'california' + 'texas' + 'arizona'
+  return utah + california + texas + arizona;
 }
 let totalNumber = []
 
@@ -100,7 +101,7 @@ function ingredients(obj){
 
 //Code Here
 function largeNumbers(obj){
-
+  const{first, second, third} = obj
 }
 
 
@@ -114,6 +115,6 @@ function largeNumbers(obj){
 
 //Code Here
 function numberGroups(obj){
-
+  const {a, b, c} = obj
 }
 

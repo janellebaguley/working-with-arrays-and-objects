@@ -61,11 +61,11 @@ function showValues(obj){
 //Code Here
 function greaterThan10(obj){
   for (let key in obj){
-    if (key < 10){
+    if (!obj[key] < 10){
       obj[key] = 0;
     }
   }
-  return obj
+  return obj;
 }
 
 
@@ -79,9 +79,9 @@ function greaterThan10(obj){
 
 //Code Here
 function double(obj){
-  // for (let key in obj)[
-  //   obj[key] *= 2;
-  // ]
+  for (let key in obj){
+    obj[key] *= 2;
+  }
 }
 
 
@@ -135,11 +135,12 @@ function secrets(obj){
 
 //Code Here
 function removePassword(obj){
-  for (let key in obj){
-    if (key.includes('password')){
-      delete obj[key];
+  for (let prop in obj){
+    if (!obj[prop].includes('password')){
+      delete obj[prop];
     }
   }
+  return obj;
 }
 
 
@@ -160,7 +161,7 @@ var deleteTheBigNumbers = {
 
 //Code Here
 for(let key in deleteTheBigNumbers){
-  if(key[deleteTheBigNumbers] > 100){
+  if(deleteTheBigNumbers[key] > 100){
     delete deleteTheBigNumbers[key];
   }
 }
@@ -178,14 +179,12 @@ for(let key in deleteTheBigNumbers){
 //Code Here
 function startsWithK(obj){
   for (let key in obj){
-    if (key.includes('k')){
+    if (obj[key].startsWith('k')){
       delete obj[key];
     }
   }
-  return startsWithK;
+  return obj;
 }
-  
-
 
 ////////// PROBLEM 8 //////////
 
