@@ -51,7 +51,16 @@ var employees = [
 */
 
 //Code Here
-
+function employeeUpdater(){
+//   for(let i = 0; i < employees.length; i++){
+//     for(let j = i+1; j < employees.length; j++){
+//       if(wemployees[i] === employees[j]){
+//         employees.splice(j, 1)
+//       }
+//     }
+//   }
+//   return employees
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -108,8 +117,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = 'eat food';
+var fluffy2ndFriend = 'Lazy Bones';
 
 
 
@@ -149,8 +158,9 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner(){
 
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -168,6 +178,7 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
-
+function looper(){
+  
+}
 
