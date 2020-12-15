@@ -75,12 +75,12 @@ let totalNumber = []
 */
 
 function ingredients(obj){
-//   let obj {
-//     carb: 'lots',
-//     fat: 'little',
-//     protein:'not enough'
-//   }
-  let {carb, fat, protein} = obj;
+  // let obj = {
+  //   carb: 'lots',
+  //   fat: 'little',
+  //   protein:'not enough'
+  // }
+  // const {'carb', 'fat', 'protein'} = obj;
 }
 
 
@@ -103,7 +103,11 @@ function ingredients(obj){
 function largeNumbers(obj){
   const{first, second, third} = obj
 }
-
+obj = {
+  first: 4,
+  second: 2,
+  third: 1
+}
 
 ////////// PROBLEM 6 //////////
 

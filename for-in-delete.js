@@ -42,7 +42,7 @@
 function showValues(obj){
   let newStr = ''
   for (let key in obj){
-    newStr = newStr + obj[key]
+    newStr = newStr += obj[key]
     // newStr += obj[key] also works can't use function in own scope so don't use showValues
   }
   return newStr
@@ -62,10 +62,10 @@ function showValues(obj){
 function greaterThan10(obj){
   for (let key in obj){
     if (!obj[key] < 10){
-      obj[key] = 0;
+      obj[key] === 0;
     }
   }
-  return obj;
+  return obj
 }
 
 
@@ -82,6 +82,7 @@ function double(obj){
   for (let key in obj){
     obj[key] *= 2;
   }
+  return obj
 }
 
 
@@ -97,12 +98,12 @@ function double(obj){
 
 //Code Here
 function secrets(obj){
-  // let strVar =();
-  // for (let key in obj){
-  //   if (key.startsWith('sh')){
-  //     delete obj[key];
-  //   }
-  // }
+  let strVar =('');
+   for (let key in obj){
+     if (key.startsWith('sh')){
+       delete obj[key];
+     }
+   }
 }
 
 

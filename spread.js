@@ -39,8 +39,7 @@ let colorsCopy = [...colors]
 
 let numbers = [4, 6, 10];
 
-let addNums = [...numbers]
-// result = addNums()
+let addNums  = [...numbers]
 
 ////////// PROBLEM 4 //////////
 

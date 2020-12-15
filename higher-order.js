@@ -100,9 +100,8 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 
 
 let myStrongest  = monstersInYourPocket.filter(function(CP){
-  return CP <= 200
+  return monstersInYourPocket.CP < 200
 })
-
 
 
 ////////// PROBLEM 5 //////////
@@ -119,7 +118,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 let orderTotals = orders.map(function(element, index, arr){
-  return element + 1
+  return element.price *= element.tax
 })
 
 

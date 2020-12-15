@@ -51,17 +51,8 @@ var employees = [
 */
 
 //Code Here
-function employeeUpdater(){
-//   for(let i = 0; i < employees.length; i++){
-//     for(let j = i+1; j < employees.length; j++){
-//       if(wemployees[i] === employees[j]){
-//         employees.splice(j, 1)
-//       }
-//     }
-//   }
-//   return employees
+function employeeUpdater(employees){
 }
-
 
 ////////// PROBLEM 2 //////////
 
@@ -158,8 +149,14 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-function recordCleaner(){
-
+function recordCleaner(myCar){
+  for(let key in myCar){
+    if(key === 'atFaultForAccidents'){
+      for(let props in myCar.atFaultForAccident){
+        myCar.atFaultForAccident[props] = false
+      }
+    }
+  }
 }
 
 
@@ -178,7 +175,12 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-function looper(){
+// function looper(numsArr){
+//   for(let i=0; i < numsArr.length; i++)
+//   if(numsArr % 2 === 0){
+//     return 'even';
+//   } return 'odd';
+//     }
   
-}
+
 
