@@ -74,16 +74,15 @@ let totalNumber = []
   Push these new variables to an array and return the array. 
 */
 
-function ingredients(obj){
-  // let obj = {
-  //   carb: 'lots',
-  //   fat: 'little',
-  //   protein:'not enough'
-  // }
-  // const {'carb', 'fat', 'protein'} = obj;
+function ingredients(){
+  let obj = {
+    carb: '',
+    fat: '',
+    protein:''
+  }
 }
 
-
+let newObj = ingredients.push()
 
 ////////// PROBLEM 5 //////////
 

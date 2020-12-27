@@ -17,7 +17,7 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
   The filter function takes a callback with the parameters
   function(element, index, wholeArray){}  Function Form
-  (element, index, wholeArray)=>{}    Arrow Form
+  (element, index, wholeArray)=>{}    Arrow Formd
 */
 
 //Code Here
@@ -98,10 +98,13 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-
-let myStrongest  = monstersInYourPocket.filter(function(CP){
-  return monstersInYourPocket.CP < 200
+let myStrongest = monstersInYourPocket.filter(function(element, index, array){
+  if (element >200){
+    return myStrongest;
+  }
+  
 })
+
 
 
 ////////// PROBLEM 5 //////////

@@ -51,7 +51,11 @@ var employees = [
 */
 
 //Code Here
-function employeeUpdater(employees){
+function employeeUpdater(){
+  let updatedEmployees =[]
+    if (employees.firstName == 'Theo' && employees.lastName === 'Trill'){
+      delete employees
+  }
 }
 
 ////////// PROBLEM 2 //////////
